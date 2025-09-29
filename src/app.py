@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, Blueprint
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flasgger import Swagger
 from swagger_spec import SWAGGER_SPEC
 from models import db, Calzado, Suela, DetalleSuela
@@ -15,12 +15,7 @@ from controllers.imputados_controller import imputados_bp
 
 app = Flask(__name__)
 
-CORS(app, origins=[
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173"
-], supports_credentials=True)
+CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = (
 
