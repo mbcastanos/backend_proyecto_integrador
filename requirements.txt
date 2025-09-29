@@ -1,3 +1,4 @@
+gunicorn==19.7.1
 Flask==2.3.3
 Flask-SQLAlchemy==3.0.5
 mysql-connector-python==8.1.0
