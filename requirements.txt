@@ -2,12 +2,12 @@
 mysql-connector-python
 # Servidor de producción para Flask
 gunicorn
+flasgger==0.9.7.1
 attrs==25.3.0
 bcrypt==4.0.1
 blinker==1.9.0
 charset-normalizer==3.4.2
 click==8.2.1
-flasgger==0.9.7.1
 Flask==2.3.3
 flask-cors==6.0.1
 Flask-SQLAlchemy==3.0.5
